@@ -1,0 +1,26 @@
+#root = true
+
+# C# files
+[*.cs]
+
+# Naming rules
+
+dotnet_naming_rule.method_should_be_method_name_for_tests.severity = warning
+dotnet_naming_rule.method_should_be_method_name_for_tests.symbols = method
+dotnet_naming_rule.method_should_be_method_name_for_tests.style = method_name_for_tests
+
+# Symbol specifications
+
+dotnet_naming_symbols.method.applicable_kinds = method
+dotnet_naming_symbols.method.applicable_accessibilities = public
+dotnet_naming_symbols.method.required_modifiers = 
+
+# Naming styles
+
+dotnet_naming_style.method_name_for_tests.required_prefix = 
+dotnet_naming_style.method_name_for_tests.required_suffix = 
+dotnet_naming_style.method_name_for_tests.word_separator = _
+dotnet_naming_style.method_name_for_tests.capitalization = pascal_case
+
+# CA1707: Identifiers should not contain underscores
+dotnet_diagnostic.CA1707.severity = none
